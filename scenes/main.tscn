@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ceu771rqxpk0b"]
+
+[ext_resource type="Script" uid="uid://cb8661jv140k3" path="res://scripts/Player.gd" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://b61p67fx8n72b" path="res://Sprites/Raquete_Azul-export.png" id="2_sugp2"]
+[ext_resource type="Texture2D" uid="uid://drod5vyvawort" path="res://Sprites/Raquete_Vermelha-export-export.png" id="3_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://7fyvmbl3kke1" path="res://Sprites/Disco_Hockey-export.png" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://bmelyjmwwqtd6" path="res://Player2.gd" id="3_tbgi4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8w0r3"]
+size = Vector2(27, 173)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sugp2"]
+radius = 21.213203
+
+[node name="Main" type="Node2D" unique_id=524006887]
+metadata/_edit_lock_ = true
+
+[node name="Player" type="StaticBody2D" parent="." unique_id=1735035425]
+position = Vector2(209, 422)
+script = ExtResource("2_0wfyh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2068121084]
+position = Vector2(17, 0)
+texture = ExtResource("2_sugp2")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1200338454]
+visible = false
+position = Vector2(0.5, -1.5)
+shape = SubResource("RectangleShape2D_8w0r3")
+debug_color = Color(0.9939868, 0, 0.23629779, 0.41960785)
+
+[node name="Player2" type="StaticBody2D" parent="." unique_id=256271330]
+position = Vector2(391, 410)
+script = ExtResource("3_tbgi4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2" unique_id=783880615]
+position = Vector2(-14, 4)
+texture = ExtResource("3_jyhfs")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2" unique_id=305573891]
+shape = SubResource("RectangleShape2D_8w0r3")
+debug_color = Color(0.9939868, 0, 0.23629779, 0.41960785)
+
+[node name="Ball" type="RigidBody2D" parent="." unique_id=508793428]
+position = Vector2(175, 227)
+linear_damp = 1.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ball" unique_id=46579463]
+texture = ExtResource("3_sugp2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball" unique_id=150743768]
+visible = false
+shape = SubResource("CircleShape2D_sugp2")
+debug_color = Color(0.9992518, 0, 0.13247031, 0.41960785)
+
+[node name="Ball2" type="RigidBody2D" parent="." unique_id=993670028]
+position = Vector2(385, 227)
+linear_damp = 1.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ball2" unique_id=569723319]
+texture = ExtResource("3_sugp2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball2" unique_id=174200531]
+visible = false
+shape = SubResource("CircleShape2D_sugp2")
+debug_color = Color(0.9992518, 0, 0.13247031, 0.41960785)
