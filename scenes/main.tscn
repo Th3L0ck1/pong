@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://7fyvmbl3kke1" path="res://sprites/Disco_Hockey-export.png" id="3_sugp2"]
 [ext_resource type="Texture2D" uid="uid://cke428nc3kufi" path="res://sprites/Raquete_Vermelha-export-export-export.png" id="3_tbgi4"]
 [ext_resource type="Script" uid="uid://nr5m628p2ysr" path="res://scripts/ball.gd" id="4_tefeu"]
+[ext_resource type="FontFile" uid="uid://cgvjtd35kenhm" path="res://fonts/Pixeled.ttf" id="7_o6xl0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w0r3"]
 size = Vector2(27, 128)
@@ -90,3 +91,13 @@ shape = SubResource("RectangleShape2D_h4t55")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Wall" unique_id=484601815]
 position = Vector2(470, 561)
 shape = SubResource("RectangleShape2D_h4t55")
+
+[node name="Score" type="Label" parent="." unique_id=1537929767]
+offset_left = 429.0
+offset_top = -3.0
+offset_right = 551.0
+offset_bottom = 137.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("7_o6xl0")
+theme_override_font_sizes/font_size = 35
+text = "1 : 0"

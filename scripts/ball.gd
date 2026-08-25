@@ -39,5 +39,5 @@ func score():
 		reset()
 		scoreP2 += 1
 	
-	print(scoreP1 , ":" , scoreP2)
+	$"../Score".text = str(scoreP1) + " : " + str(scoreP2)
 	pass
