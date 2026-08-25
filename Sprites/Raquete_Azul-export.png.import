@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b61p67fx8n72b"
-path="res://.godot/imported/Raquete_Azul-export.png-618e7fda64caafcd9ef7b4a3d840de85.ctex"
+uid="uid://cgkwalt1vptr6"
+path="res://.godot/imported/Raquete_Azul-export.png-01a51fa8cce00c1989764df504f28090.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Raquete_Azul-export.png"
-dest_files=["res://.godot/imported/Raquete_Azul-export.png-618e7fda64caafcd9ef7b4a3d840de85.ctex"]
+source_file="res://sprites/Raquete_Azul-export.png"
+dest_files=["res://.godot/imported/Raquete_Azul-export.png-01a51fa8cce00c1989764df504f28090.ctex"]
 
 [params]
 

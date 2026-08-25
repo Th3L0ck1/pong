@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7fyvmbl3kke1"
-path="res://.godot/imported/Disco_Hockey-export.png-4859d513f64714738dc73d0ebfb8d0b7.ctex"
+path="res://.godot/imported/Disco_Hockey-export.png-3347f57005be81e710be09387833e6dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Disco_Hockey-export.png"
-dest_files=["res://.godot/imported/Disco_Hockey-export.png-4859d513f64714738dc73d0ebfb8d0b7.ctex"]
+source_file="res://sprites/Disco_Hockey-export.png"
+dest_files=["res://.godot/imported/Disco_Hockey-export.png-3347f57005be81e710be09387833e6dd.ctex"]
 
 [params]
 

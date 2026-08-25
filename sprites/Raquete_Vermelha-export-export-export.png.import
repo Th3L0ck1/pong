@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drod5vyvawort"
-path="res://.godot/imported/Raquete_Vermelha-export-export.png-0edce6a2e49bd4d367beb7ee42cfa7a7.ctex"
+uid="uid://cke428nc3kufi"
+path="res://.godot/imported/Raquete_Vermelha-export-export-export.png-af287d5c904b91d8056b89a71d6b6e54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Raquete_Vermelha-export-export.png"
-dest_files=["res://.godot/imported/Raquete_Vermelha-export-export.png-0edce6a2e49bd4d367beb7ee42cfa7a7.ctex"]
+source_file="res://sprites/Raquete_Vermelha-export-export-export.png"
+dest_files=["res://.godot/imported/Raquete_Vermelha-export-export-export.png-af287d5c904b91d8056b89a71d6b6e54.ctex"]
 
 [params]
 
