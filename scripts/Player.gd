@@ -1,7 +1,9 @@
-extends StaticBody2D
+extends StaticBody2D 
 
-var speed = 350
+
+@export var speed = 350
 var dir = Vector2(0,0)
+
 
 @export var up = KEY_W
 @export var down = KEY_S
@@ -16,7 +18,9 @@ func _physics_process(delta: float) -> void:
 	move(delta)
 	
 	pass
+
 	
+	pass
 func move(delta):
 	
 	dir = Vector2()

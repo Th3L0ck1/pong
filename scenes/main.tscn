@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://cke428nc3kufi" path="res://sprites/Raquete_Vermelha-export-export-export.png" id="3_tbgi4"]
 [ext_resource type="Script" uid="uid://nr5m628p2ysr" path="res://scripts/ball.gd" id="4_tefeu"]
 [ext_resource type="FontFile" uid="uid://cgvjtd35kenhm" path="res://fonts/Pixeled.ttf" id="7_o6xl0"]
+[ext_resource type="Script" uid="uid://du26e7u36qfw6" path="res://scripts/power_up.gd" id="8_choun"]
+[ext_resource type="Texture2D" uid="uid://bp4i56e8du8nu" path="res://sprites/Speed_card.png" id="8_tipki"]
+[ext_resource type="Texture2D" uid="uid://b5xdaxfecglbr" path="res://sprites/Growth_card.png" id="9_85g3d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w0r3"]
 size = Vector2(27, 128)
@@ -40,7 +43,6 @@ texture = ExtResource("2_sugp2")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1200338454]
-visible = false
 position = Vector2(0.5, -1.5)
 shape = SubResource("RectangleShape2D_8w0r3")
 debug_color = Color(0.9939868, 0, 0.23629779, 0.41960785)
@@ -101,3 +103,55 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("7_o6xl0")
 theme_override_font_sizes/font_size = 35
 text = "1 : 0"
+
+[node name="Control" type="Control" parent="." unique_id=1718630478]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 240.0
+offset_top = 251.0
+offset_right = 280.0
+offset_bottom = 280.0
+script = ExtResource("8_choun")
+metadata/_edit_group_ = true
+
+[node name="Card_Speed" type="Button" parent="Control" unique_id=1465103988]
+process_mode = 3
+layout_mode = 0
+offset_right = 188.0
+offset_bottom = 285.0
+theme_override_constants/outline_size = 10
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("7_o6xl0")
+theme_override_font_sizes/font_size = 10
+action_mode = 0
+text = "Speed
+ Card"
+icon = ExtResource("8_tipki")
+flat = true
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+text_direction = 1
+
+[node name="Card_Growth" type="Button" parent="Control" unique_id=962455685]
+process_mode = 3
+layout_mode = 0
+offset_left = 240.0
+offset_right = 428.0
+offset_bottom = 285.0
+theme_override_constants/outline_size = 10
+theme_override_constants/line_spacing = -5
+theme_override_fonts/font = ExtResource("7_o6xl0")
+theme_override_font_sizes/font_size = 10
+action_mode = 0
+text = "Growth
+ Card"
+icon = ExtResource("9_85g3d")
+flat = true
+clip_text = true
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+text_direction = 1
